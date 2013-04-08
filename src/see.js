@@ -12,15 +12,19 @@ see._parse = function _parse(ptn){
     , w
 
   function word(sub){
-    return sub.match(/\w*/)[0]
+    var w = sub.match(/\w*/)[0] 
+    i += w.length - 1
+    return w
   }
 
   while(i<ptn.length){
     curr = ptn[i]
     switch(curr){
+      case '>':
+        parts.push(curr)
+        break;
       default:
-        parts.push(w = word(ptn.substr(i, ptn.length - i)))
-        i += w.length
+        parts.push(word(ptn.substr(i, ptn.length - i)))
         break;
     }
     i++

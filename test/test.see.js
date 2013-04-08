@@ -11,6 +11,10 @@ describe("See", function(){
       parts.should.have.length(1)
       parts.should.eql(['div'])
     })
+    it("should find 3 parts for div>div", function(){
+      var parts = see._parse('div>div')
+      parts.should.eql(['div', '>', 'div'])
+    })
   })
 })
 
