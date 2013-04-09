@@ -12,6 +12,13 @@ d3.select('body')
   .select('p').text('hello :)')
 ```
 
+```html
+<header></header>
+<section>
+  <article><p>hello :)</p></article>
+</section>
+<footer></footer>
+```
 
 Developing
 ----------
