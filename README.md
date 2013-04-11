@@ -126,7 +126,7 @@ Or target multiple nodes
 
 ```javascript
 d3.select('body')
-  .selectAll(see('nav>ul>li*5'))
+  .selectAll(see('nav>ul>$li*5'))
   .call(callForEachLi)
 ```
 
