@@ -106,7 +106,7 @@ d3.select('body').selectAll(see('header+(section>p>span)+footer'))
 
 ### Targeting $
 
-`$` allows you to control the node(s) that is return to create the selection
+`$` allows you to control the node(s) that are returned to select(All)
 
 ```javascript
 d3.select('body')
