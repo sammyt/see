@@ -73,7 +73,7 @@ d3.select('body').selectAll(see('header+section+footer'))
 `li*5`
 
 ```javascript
-d3.select('body').selectAll(see('ul>li.foo*5'))
+d3.select('body').select(see('ul>li.foo*5'))
 ```
 
 `see` returns the top level `<ul/>`
