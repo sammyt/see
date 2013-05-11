@@ -173,4 +173,12 @@ function tokenize(ptn){
 
 see._tokenize = tokenize 
 
+
+if (typeof module === 'object' && module.exports) {
+  d3 = require('d3')
+  module.exports = see
+}
+
 })()
+
+
