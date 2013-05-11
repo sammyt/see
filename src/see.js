@@ -88,7 +88,7 @@ function tokenize(ptn){
     , curr
 
   function word(sub){
-    var match = sub.match(/(\w+)(\[(.*)\])*(\.(\w+))*/)
+    var match = sub.match(/([\w-]+)(\[(.*)\])*(\.([\w-]+))*/)
       , w = match[1]
       , hasAttrs = sub.substr(w.length).match(/^(\[(.*)\])/)
       , attrLen = hasAttrs ? hasAttrs[0].length : 0
